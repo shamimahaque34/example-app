@@ -5,7 +5,7 @@
     <!-- META DATA -->
     @include('backend.includes.assets.meta')
     <!-- TITLE -->
-    <title>Invoice Generator - @yield('title')</title>
+    {{-- <title>Invoice Generator - @yield('title')</title> --}}
 
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('/') }}backend/assets/images/brand/favicon.ico" />
