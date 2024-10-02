@@ -12,7 +12,7 @@
     <meta name="keywords" content="">
 
     <!-- TITLE -->
-    <title>Accounting</title>
+    <title></title>
 
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('/')}}backend/assets/images/brand/favicon.ico" />
@@ -169,7 +169,7 @@
         <div class="col col-login mx-auto text-center">
             <a href="#" class="text-white">
 {{--                <img src="{{asset('/')}}backend/assets/images/brand/logo.png" class="header-brand-img" alt="">--}}
-                <h3>Accounting</h3>
+                <h3></h3>
             </a>
         </div>
         <div class="container-login100">
