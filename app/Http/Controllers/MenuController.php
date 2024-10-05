@@ -12,7 +12,7 @@ class MenuController extends Controller
      */
     public function index()
     {
-        $menus = Menu::parentMenus();
+        $menus = Menu::all();
 
         return view('backend.menus.index', compact('menus'));
     }
@@ -54,7 +54,9 @@ class MenuController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $menu = Menu::findOrFail($id);
+        $menus = Menu::whereNull('parent_id')->get();  // Fetch only parent menus
+        return view('backend.menus.create', compact('menu', 'menus'));
     }
 
     /**
@@ -62,14 +64,29 @@ class MenuController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+            'url' => 'required|string|max:255',
+            'parent_id' => 'nullable|exists:menus,id',
+        ]);
+
+        $menu = Menu::findOrFail($id);
+        $menu->update($validated);
+
+        return redirect()->route('menus.index', $menu->id)->with('success', 'Menu updated successfully!');
     }
+
 
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(string $id)
     {
-        //
+        $menu = Menu::where('id',$id)->first();
+        if ($menu)
+        {
+            $menu->delete();
+        }
+        return redirect()->route('menus.index')->with('success','Menu Delete Successfully');
     }
 }
