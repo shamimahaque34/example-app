@@ -44,12 +44,10 @@
                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 pull-right">
                     <div class="main-menu" style="">
                         <nav>
-                            <p style="margin-left:10px; margin-top: 20px;" class="btn btn-danger pull-right" style="margin-top: 20px;"><a href="work-and-study-program-in-canada.html" target="_blank" style="color: #fff;">Work & Study in Canada</a></p>
 
-                            <p class="btn btn-danger pull-right" style="margin-top: 20px;"><a href="http://bit.ly/Ambei" target="_blank" style="color: #fff;">Quick Register</a></p>
 
-                            <ul class="pull-right">
-                                <li class="active"><a href="index.html">HOME</a></li>
+                            <ul class="pull-left">
+
                                 <li><a href="#">CURRENT JOBS <i class="fa fa-angle-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="jobs-in-india.html">Jobs in India</a></li>
@@ -145,14 +143,7 @@
                                         <li><a href="ambe-international-clients.html">Clients</a></li>
                                     </ul>
                                 </li> -->
-                                <li><a href="#">CONTACT US <i class="fa fa-angle-down"></i></a>
-                                    <ul class="sub-menu">
-                                        <li><a href="clients.html">Employers</a></li>
-                                        <li><a href="jobseeker.html">Jobseeker</a></li>
-                                        <li><a href="grievance-redressal.html">Grievance Redressal</a></li>
 
-                                    </ul>
-                                </li>
                             </ul>
 
                         </nav>
@@ -189,14 +180,7 @@
                                 <li><a href="OUR-Uniqueness.html">OUR CLIENTS</a></li>
                                 <li><a href="OUR-Uniqueness.html">US EMIGRATION PROGRAM</a></li>
                                 <!--<li><a href="Our-Distribution.php">Our Distribution</a></li>-->
-                                <li><a href="#">CONTACT US</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="#">Contact Us</a></li>
-                                        <li><a href="#">Grievance Redressal Form</a></li>
 
-                                    </ul>
-                                </li>
-                                <li><a href="http://bit.ly/Ambei" target="_blank">Quick Register</a></li>
                             </ul>
                         </nav>
                     </div>

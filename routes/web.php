@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\PageController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -13,4 +15,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('backend.dashboard.dashboard');
     })->name('dashboard');
+
+    Route::resource('menus', MenuController::class);
+    Route::resource('pages', PageController::class);
 });
