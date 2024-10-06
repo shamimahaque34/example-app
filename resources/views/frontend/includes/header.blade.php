@@ -47,36 +47,38 @@
 
 
                             <ul class="pull-left">
+                                @foreach ($menus as $menu)
 
-                                <li><a href="#">CURRENT JOBS <i class="fa fa-angle-down"></i></a>
+                                <li><a href="#">{{ $menu->title }}<i class="fa fa-angle-down"></i></a>
+                                    @if ($menu->children->isNotEmpty())
                                     <ul class="sub-menu">
-                                        <li><a href="jobs-in-india.html">Jobs in India</a></li>
-                                        <li><a href="#">Jobs In Middle East<i class="fa fa-angle-down pull-right" style="margin-top: 10px;"></i></a>
+                                        @foreach ($menu->children as $submenu)
+                                        <li><a href="jobs-in-india.html">{{ $submenu->title }}</a>
+                                            @if ($submenu->children->isNotEmpty())
                                             <ul class="sub-menu">
-                                                <li><a href="jobs-in-saudi-arabia.html">Jobs in Saudi Arabia</a></li>
-                                                <li><a href="jobs-in-qatar.html">Jobs in Qatar</a></li>
-                                                <li><a href="jobs-in-oman.html">Jobs in Oman</a></li>
-                                                <li><a href="jobs-in-kuwait.html">Jobs in Kuwait</a></li>
-                                                <li><a href="jobs-in-bahrain.html">Jobs in Bahrain</a></li>
-                                                <li><a href="jobs-in-uae.html">Jobs in UAE </a></li>
+                                                @foreach ($submenu->children as $subsubmenu)
+                                                <li><a href="jobs-in-romania.html">{{ $subsubmenu->title }}</a></li>
+                                                @endforeach
+
                                             </ul>
+                                            @endif
+
                                         </li>
-                                        <li><a href="#">Jobs In Europe<i class="fa fa-angle-down pull-right" style="margin-top: 10px;"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="jobs-in-romania.html">Jobs in Romania</a></li>
-                                                <li><a href="jobs-in-germany.html">Jobs in Germany</a></li>
-                                                <li><a href="jobs-in-bulgaria.html">Jobs in Bulgaria</a></li>
-                                                <li><a href="jobs-in-croatia.html">Jobs in Croatia</a></li>
-                                                <li><a href="jobs-in-france.html">Jobs in France</a></li>
-                                                <li><a href="jobs-in-hungary.html">Jobs in Hungary</a></li>
-                                                <li><a href="jobs-in-italy.html">Jobs in Italy</a></li>
-                                                <li><a href="jobs-in-malta.html">Jobs in Malta</a></li>
+                                        @endforeach
+
+
                                             </ul>
+                                            @endif
                                         </li>
+
+                                        @endforeach
+
+
                                     </ul>
 
-                                </li>
-                                <li><a href="#">EMPLOYERS<i class="fa fa-angle-down"></i></a>
+
+
+                                {{-- <li><a href="#">EMPLOYERS<i class="fa fa-angle-down"></i></a>
                                     <ul class="sub-menu">
                                         <li><a href="ambe-international-clients.html">Our Clients </a></li>
                                         <li><a href="#">Services <i class="fa fa-angle-down pull-right" style="margin-top: 10px;"></i></a>
@@ -114,7 +116,7 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> --}}
 
                                 <!-- <li><a href="#"> CLIENTS <i class="fa fa-angle-down"></i></a>
                                     <ul class="sub-menu">

@@ -44,6 +44,11 @@
                         <option value="{{ $parentMenu->id }}" {{ isset($menu) && $menu->parent_id == $parentMenu->id ? 'selected' : '' }}>
                             {{ $parentMenu->title }}
                         </option>
+                        @if ($parentMenu->children->isNotEmpty())
+                            @foreach ($parentMenu->children as $submenu)
+                                <option value="{{ $submenu->id }}">-- {{ $submenu->title }}</option>
+                            @endforeach
+                        @endif
                     @endforeach
                 </select>
                 <small>Select a parent menu if this is a submenu.</small>
