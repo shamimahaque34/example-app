@@ -60,7 +60,7 @@ class MenuController extends Controller
         $menu = Menu::findOrFail($id);
         $menus = Menu::whereNull('parent_id')->get();  // Fetch only parent menus
         $pages = Page::all();
-        return view('backend.menus.create', compact('menu', 'menus'));
+        return view('backend.menus.create', compact('menu', 'menus','pages'));
     }
 
     /**

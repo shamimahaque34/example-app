@@ -30,8 +30,16 @@ class PageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Page::create([
+            'title' => $request->input('title'),
+            'slug' => $request->input('slug'),
+            'content' => $request->input('content'),
+
+        ]);
+
+        return redirect()->route('pages.index')->with('success', 'Page created successfully!');
     }
+
 
     /**
      * Display the specified resource.
@@ -39,7 +47,7 @@ class PageController extends Controller
     public function show(string $slug)
     {
         $page = Page::where('slug', $slug)->firstOrFail();
-        return view('pages.show', compact('page'));
+        return view('backend.pages.show', compact('page'));
     }
 
     /**
@@ -47,7 +55,9 @@ class PageController extends Controller
      */
     public function edit(string $id)
     {
-        //
+
+        $page = Page::findOrFail($id);
+        return view('backend.pages.create', compact('page'));
     }
 
     /**
@@ -55,15 +65,32 @@ class PageController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $page = Page::findOrFail($id);
+
+
+        // Update the page
+        $page->update([
+            'title' => $request->input('title'),
+            'slug' => $request->input('slug'),
+            'content' => $request->input('content'),
+
+        ]);
+
+        return redirect()->route('pages.index', $page->id)->with('success', 'Page updated successfully!');
     }
+
 
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(string $id)
     {
-        //
+        $page = Page::findOrFail($id);
+        if ($page)
+        {
+            $page->delete();
+        }
+        return redirect()->route('pages.index')->with('success','Page Delete Successfully');
     }
 
 
