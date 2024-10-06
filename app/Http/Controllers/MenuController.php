@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Menu;
+use App\Models\Page;
 
 class MenuController extends Controller
 {
@@ -23,7 +24,9 @@ class MenuController extends Controller
     public function create()
     {
         $menus = Menu::whereNull('parent_id')->get();  // Fetch only parent menus for the dropdown
-        return view('backend.menus.create', compact('menus'));
+
+        $pages = Page::all();
+        return view('backend.menus.create', compact('menus','pages'));
     }
 
     /**
@@ -56,6 +59,7 @@ class MenuController extends Controller
     {
         $menu = Menu::findOrFail($id);
         $menus = Menu::whereNull('parent_id')->get();  // Fetch only parent menus
+        $pages = Page::all();
         return view('backend.menus.create', compact('menu', 'menus'));
     }
 

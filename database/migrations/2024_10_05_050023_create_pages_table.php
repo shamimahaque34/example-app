@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('pages', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('menu_id');  // Foreign key to menu
             $table->string('title');
+            $table->string('slug')->unique();
             $table->text('content');  // Page content
             $table->timestamps();
 
-            $table->foreign('menu_id')->references('id')->on('menus')->onDelete('cascade');
+            
 
         });
     }

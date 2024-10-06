@@ -9,11 +9,11 @@ class Page extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['menu_id', 'title', 'content'];
+    protected $fillable = ['title', 'slug', 'content'];
 
-    // Relationship: A page belongs to a menu
+    // Each page may be associated with one menu
     public function menu()
     {
-        return $this->belongsTo(Menu::class);
+        return $this->hasOne(Menu::class);
     }
 }

@@ -18,4 +18,5 @@ Route::middleware([
 
     Route::resource('menus', MenuController::class);
     Route::resource('pages', PageController::class);
+    Route::get('/{slug}', [PageController::class, 'show'])->name('page.show');
 });

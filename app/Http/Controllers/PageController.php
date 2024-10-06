@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Page;
 
 class PageController extends Controller
 {
@@ -11,7 +12,9 @@ class PageController extends Controller
      */
     public function index()
     {
-        //
+        $pages = Page::all();
+
+        return view('backend.pages.index', compact('pages'));
     }
 
     /**
@@ -19,7 +22,7 @@ class PageController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.pages.create');
     }
 
     /**
@@ -33,9 +36,10 @@ class PageController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $slug)
     {
-        //
+        $page = Page::where('slug', $slug)->firstOrFail();
+        return view('pages.show', compact('page'));
     }
 
     /**
@@ -61,4 +65,7 @@ class PageController extends Controller
     {
         //
     }
+
+
+
 }

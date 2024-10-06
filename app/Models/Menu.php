@@ -24,10 +24,9 @@ class Menu extends Model
     }
 
 
-    // Relationship: A menu has one page
     public function page()
     {
-        return $this->hasOne(Page::class);
+        return $this->belongsTo(Page::class);
     }
 
     // Get all parent menus

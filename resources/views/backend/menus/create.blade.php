@@ -37,6 +37,21 @@
 
             <div class="row mt-3">
             <div class="form-group">
+                <label for="page_id">Link to Dynamic Page (Optional)</label>
+                <select name="page_id" id="page_id" class="form-control">
+                    <option value="">-- None --</option>
+                    @foreach ($pages as $page)
+                        <option value="{{ $page->id }}" {{ isset($menu) && $menu->page_id == $page->id ? 'selected' : '' }}>{{ $page->title }}</option>
+                    @endforeach
+                </select>
+
+            </div>
+
+        </div>
+
+
+            <div class="row mt-3">
+            <div class="form-group">
                 <label for="parent_id">Parent Menu (Optional)</label>
                 <select name="parent_id" class="form-control">
                     <option value="">None</option>

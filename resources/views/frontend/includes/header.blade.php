@@ -53,11 +53,11 @@
                                     @if ($menu->children->isNotEmpty())
                                     <ul class="sub-menu">
                                         @foreach ($menu->children as $submenu)
-                                        <li><a href="jobs-in-india.html">{{ $submenu->title }}</a>
+                                        <li><a href="{{ url($submenu->url?? route('page.show', $submenu->page->slug)) }}">{{ $submenu->title }}</a>
                                             @if ($submenu->children->isNotEmpty())
                                             <ul class="sub-menu">
                                                 @foreach ($submenu->children as $subsubmenu)
-                                                <li><a href="jobs-in-romania.html">{{ $subsubmenu->title }}</a></li>
+                                                <li><a href="{{ url($subsubmenu->url ?? route('page.show', $subsubmenu->page->slug)) }}">{{ $subsubmenu->title }}</a></li>
                                                 @endforeach
 
                                             </ul>
