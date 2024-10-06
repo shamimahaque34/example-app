@@ -36,7 +36,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-2 col-sm-2 col-xs-12">
                     <div class="logo-area">
-                        <a href="index.html">
+                        <a href="{{ route('home')}}">
                             <img src="{{ asset('/') }}frontend/images/logo12.png" alt="logo" class="img-responsive" style="margin-top: 10px; margin-left: 10px;">
                         </a>
                     </div>

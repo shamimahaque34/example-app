@@ -37,9 +37,9 @@
 
             <div class="row mt-3">
             <div class="form-group">
-                <label for="page_id">Link to Dynamic Page (Optional)</label>
+                <label for="page_id">Link to Dynamic Page</label>
                 <select name="page_id" id="page_id" class="form-control">
-                    <option value="">-- None --</option>
+                    <option value="">None</option>
                     @foreach ($pages as $page)
                         <option value="{{ $page->id }}" {{ isset($menu) && $menu->page_id == $page->id ? 'selected' : '' }}>{{ $page->title }}</option>
                     @endforeach
@@ -52,7 +52,7 @@
 
             <div class="row mt-3">
             <div class="form-group">
-                <label for="parent_id">Parent Menu (Optional)</label>
+                <label for="parent_id">Parent Menu</label>
                 <select name="parent_id" class="form-control">
                     <option value="">None</option>
                     @foreach($menus as $parentMenu)
