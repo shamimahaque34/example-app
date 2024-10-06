@@ -46,7 +46,7 @@
                         </option>
                         @if ($parentMenu->children->isNotEmpty())
                             @foreach ($parentMenu->children as $submenu)
-                                <option value="{{ $submenu->id }}">-- {{ $submenu->title }}</option>
+                                <option value="{{ $submenu->id }}" {{ isset($menu) && $menu->parent_id == $submenu->id ? 'selected' : '' }}>{{ $submenu->title }}</option>
                             @endforeach
                         @endif
                     @endforeach
