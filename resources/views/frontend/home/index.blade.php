@@ -26,10 +26,10 @@
 
                             <div class="col-md-8 col-md-offset-2 text-center">
                                 <div class="banner-strip">
-                                    <H2>Ambe International - Recruitment and Manpower Solutions</H2>
+                                    <H2>Advance Manpower Solution</H2>
 									<H4>ARE YOU LOOKING FOR OVERSEAS JOBS?</H4>
 
-                                    <H3><a href="https://careers.ambeinter.com/jobs/Careers" target="blank" class="btn btn-danger" style="width: auto">APPLY NOW</a></H3>
+                                    <H3><a href="" target="blank" class="btn btn-danger" style="width: auto">APPLY NOW</a></H3>
                                 </div>
                             </div>
                         </div>
@@ -123,9 +123,9 @@
     <div class="container" style="margin:30px auto;">
         <div class="col-lg-9 col-md-9 col-xs-12">
             <div class="section-title">
-                <h2>Ambe International:<br><span>Manpower Consultancy & Employment Agency </span></h2>
+                <h2>Advance Manpower Solution:<br><span>Manpower Consultancy & Employment Agency </span></h2>
             </div>
-            <div style="font-size:18px;">Ambe International is a Manpower Consultancy which holds the first recruitment license issued in India in 1983 to any overseas recruitment company in India. Ambe has made over 3,50,000 placements in 25+ countries. Over the years we have been serving as a catalyst in bringing together career seekers and employers from across the world. We have been instrumental in placing unskilled, semi skilled, skilled and highly skilled personnel in the various sectors globally with an aim to achieve more in the future.</div>
+            <div style="font-size:18px;">Advance Manpower Solution is a Manpower Consultancy which holds the first recruitment license issued in India in 1983 to any overseas recruitment company in India. Ambe has made over 3,50,000 placements in 25+ countries. Over the years we have been serving as a catalyst in bringing together career seekers and employers from across the world. We have been instrumental in placing unskilled, semi skilled, skilled and highly skilled personnel in the various sectors globally with an aim to achieve more in the future.</div>
         </div>
 
         <div class="col-lg-3 col-md-3 col-xs-12">
@@ -153,7 +153,7 @@
                 <div class="col-lg-7 col-md-7 col-xs-12">
                     <div class="about-use-area-content">
                         <h2>WHO <span>WE ARE ?</span> </h2>
-                        <p style="font-size:18px;">Ambe International is a Manpower Consultancy which holds the first recruitment license issued in India in 1983 to any overseas recruitment company in India. Ambe is India's pioneering recruitment organisation with having placed 350,000 candidates in over 25 countries worldwide. Over the years we have been serving as a catalyst in bringing together career seekers and employers from across the world. We have been instrumental in placing unskilled, semi skilled, skilled and highly skilled personnel in the Oil & Gas, Construction, Maintenance, Trading and various other sectors globally.</p>
+                        <p style="font-size:18px;">Advance Manpower Solution is a Manpower Consultancy which holds the first recruitment license issued in India in 1983 to any overseas recruitment company in India. Ambe is India's pioneering recruitment organisation with having placed 350,000 candidates in over 25 countries worldwide. Over the years we have been serving as a catalyst in bringing together career seekers and employers from across the world. We have been instrumental in placing unskilled, semi skilled, skilled and highly skilled personnel in the Oil & Gas, Construction, Maintenance, Trading and various other sectors globally.</p>
                         <div class="read-more">
                             <a class="button btn btn-danger btn-lg" href="about-ambe-recruitment-agency.html">Read More</a>
                         </div>
@@ -187,7 +187,7 @@
                 <div class="col-lg-12 col-xs-12 text-center">
                     <div class="about-use-area-content">
                         <h2>Time<span>line</span> </h2>
-                        <p style="font-size:18px;">We are one of India’s leading HR solutions company with over 40 years of experience. Over the years our clients have vouched for our expertise, creativity and integrity. With an industry-acclaimed management and a team of skilled experts we deliver effective solutions in no time. We constantly push ourselves and build authentic and transparent relationships with all our clients and associates.</p> <br>
+                        <p style="font-size:18px;">We are one of Bangladesh's leading HR solutions company with over 40 years of experience. Over the years our clients have vouched for our expertise, creativity and integrity. With an industry-acclaimed management and a team of skilled experts we deliver effective solutions in no time. We constantly push ourselves and build authentic and transparent relationships with all our clients and associates.</p> <br>
 
                         <img src="{{ asset('/') }}frontend/images/timeline.png" class="img-responsive" />
 
@@ -394,20 +394,20 @@
 
                             <!-- Your embedded video player code -->
                             <div class="fb-video" data-href="https://www.facebook.com/AmbeRecruitment/videos/317861883053028/" data-show-text="false" data-width="">
-                                <blockquote cite="https://developers.facebook.com/AmbeRecruitment/videos/317861883053028/" class="fb-xfbml-parse-ignore"><a href="https://developers.facebook.com/AmbeRecruitment/videos/317861883053028/">Starting IT Recruitment from India and Europe</a>Posted by <a href="https://www.facebook.com/AmbeRecruitment/">Ambe International</a> on Tuesday, 23 June 2020</blockquote>
+                                <blockquote cite="https://developers.facebook.com/AmbeRecruitment/videos/317861883053028/" class="fb-xfbml-parse-ignore"><a href="https://developers.facebook.com/AmbeRecruitment/videos/317861883053028/">Starting IT Recruitment from India and Europe</a>Posted by <a href="https://www.facebook.com/AmbeRecruitment/">Advance Manpower Solution</a> on Tuesday, 23 June 2020</blockquote>
                             </div>
                         </div>
 
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb15">
-                            <h4 style="margin-bottom: 15px;">Join Ambe Facebook Group</h4>
-                            <a href="https://www.facebook.com/groups/AmbeInternationalGroupGulfJobs/" target="_blank" style="margin-bottom:10px;">
+                            <h4 style="margin-bottom: 15px;">Join Advance Manpower Solution Facebook Group</h4>
+                            <a href="" target="_blank" style="margin-bottom:10px;">
                                 <img src="{{ asset('/') }}frontend/images/fb-gp-icon.jpg" alt="" class="img-responsive img-thumbnail" style="margin-bottom:10px;" />
                             </a>
                         </div>
 
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb15">
                             <h4 style="margin-bottom: 15px;">Follow Us on LinkedIn</h4>
-                            <a href="https://www.linkedin.com/company/ambe-international" target="_blank" style="margin-bottom:10px;">
+                            <a href="" target="_blank" style="margin-bottom:10px;">
                                 <img src="{{ asset('/') }}frontend/images/linkedin-icon.jpg" alt="" class="img-responsive img-thumbnail" style="margin-bottom:10px;" />
                             </a>
                         </div>
@@ -484,5 +484,5 @@
 
 
     <!-- Client Logo Area Section End here -->
-    
+
 @endsection

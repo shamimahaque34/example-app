@@ -46,6 +46,10 @@ class PageController extends Controller
      */
     public function show(string $slug)
     {
+
+    }
+
+    public function showPage(string $slug){
         $page = Page::where('slug', $slug)->firstOrFail();
         return view('backend.pages.show', compact('page'));
     }

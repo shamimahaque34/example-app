@@ -30,7 +30,7 @@
             <div class="row mt-3">
             <div class="form-group">
                 <label for="url">Menu URL</label>
-                <input type="text" name="url" class="form-control" value="{{ old('url', isset($menu) ? $menu->url : '') }}" required>
+                <input type="text" name="url" class="form-control" value="{{ old('url', isset($menu) ? $menu->url : '') }}" >
             </div>
             </div>
 

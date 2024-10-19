@@ -26,6 +26,65 @@
             </div>
             </div>
 
+            <div class="row mt-3">
+                <label for="" class="col-md-3">Image</label>
+                <div class="col-md-9">
+                    <input type="file" name="image" class="form-control" accept="image/*"  />
+                    @if(isset($page))
+                        <img src="{{ asset($page->image) }}" alt="" style="height: 80px" />
+                    @endif
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="form-group">
+                    <label for="name">Posting Title</label>
+                    <input type="text" name="posting_title" class="form-control" value="{{ old('posting_title', isset($page) ? $page->posting_title : '') }}" required>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="form-group">
+                    <label for="name">Date Opened</label>
+                    <input type="text" name="date_opened" class="form-control" value="{{ old('date_opened', isset($page) ? $page->date_opened : '') }}" required>
+                </div>
+            </div>
+
+
+            <div class="row mt-3">
+                <div class="form-group">
+                    <label for="content">Job description</label>
+                    <textarea name="job_description" id="job_description" rows="5" class="form-control" required>{{ old('job_description', isset($page) ? $page->job_description : '') }}</textarea>
+                </div>
+
+            </div>
+
+
+            <div class="row mt-3">
+                <div class="form-group">
+                    <label for="name">Work Experience</label>
+                    <input type="text" name="work_experience" class="form-control" value="{{ old('work_experience', isset($page) ? $page->work_experience : '') }}" required>
+                </div>
+            </div>
+
+
+            <div class="row mt-3">
+                <div class="form-group">
+                    <label for="name">Job Type</label>
+                    <input type="text" name="job_type" class="form-control" value="{{ old('job_type', isset($page) ? $page->job_type : '') }}" required>
+                </div>
+            </div>
+
+
+            <div class="row mt-3">
+                <div class="form-group">
+                    <label for="name">Apply Link</label>
+                    <input type="text" name="apply_link" class="form-control" value="{{ old('apply_link', isset($page) ? $page->apply_link : '') }}" required>
+                </div>
+            </div>
+
+
+
 
             <div class="row mt-3">
                 <div class="form-group">
@@ -48,10 +107,10 @@
                     @enderror
                 </div>
 
-        </div>
+            </div>
 
 
-            
+
 
             <button type="submit" class="btn btn-primary">{{ isset($page) ? 'Update' : 'Create' }}</button>
         </form>

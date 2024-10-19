@@ -11,14 +11,14 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="footer-heading">
                         <!--<h2>Privacy Policy</h2>-->
-                        <a href="index.html"><img src="{{ asset('/') }}frontend/images/logo12.png" alt=""></a>
+                        <a href="index.html"><img src="{{ asset('/') }}frontend/images/logo.png" alt="" style="height: 55px"></a>
                         <div class="footer-social-icons">
                             <ul>
-                                <li><a href="https://www.facebook.com/AmbeRecruitment" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/AmbeInter" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
                                 <!--<li><a href="#"><i class="fab fa-instagram"></i></a></li>-->
-                                <li><a href="https://www.linkedin.com/company/ambe-international" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UC9jD5RzJ-E3h4tQFfgyyEiw" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="" target="_blank"><i class="fab fa-youtube"></i></a></li>
                                 <li><a href="https://wa.me/918291999288" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
                             </ul>
                             <br>
@@ -55,11 +55,13 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="footer-heading heading-margin">
                         <h2>OFFICE LOCATION</h2>
-                        <p class="footer-border-bottom"><i class="fa fa-home" aria-hidden="true"></i> Ambe International<br>
+                        <p class="footer-border-bottom"><i class="fa fa-home" aria-hidden="true"></i> Advance Manpower Solution<br>
 
-                            507, Shah and Nahar Industrial Estate,<br>
-                            Dr E Moses Road, Worli Naka,<br>
-                            Mumbai – 400018, India</p>
+                            181-182, Tejgaon Industrial Area,<br>
+                            Dhaka-1208,Bangladesh
+                            </p>
+
+
 
 
                     </div>
@@ -68,12 +70,12 @@
                     <div class="footer-heading">
                         <h2>CONTACT INFO</h2>
                         <p class="footer-border-bottom">
-                            <i class="fa fa-phone-volume" aria-hidden="true"></i> Landline: <a href="tel:+91-22-61431234" style="color: #fff">+91-22-61431234</a><br><br>
+                            <i class="fa fa-phone-volume" aria-hidden="true"></i> Mobile: <a href="tel:017 666 666 71" style="color: #fff">017 666 666 71</a><br><br>
 
 
-                            <i class="fa fa-envelope-square"></i><a href="mailto:contact@indianpersonnel.com" style="color: #fff">contact@indianpersonnel.com</a><br><br>
-                            <i class="fab fa-whatsapp" aria-hidden="true"></i><a href="https://wa.me/918291999288" target="_blank">
-                                <font color="white">+91-8291999288</font>
+                            <i class="fa fa-envelope-square"></i><a href="mailto:info@advancemanpower.org" style="color: #fff">info@advancemanpower.org</a><br><br>
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i><a href="" target="_blank">
+                                <font color="white">017 666 666 71</font>
                             </a></p>
 
                     </div>

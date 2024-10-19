@@ -34,13 +34,15 @@ class MenuController extends Controller
      */
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'title' => 'required|string|max:255',
-            'url' => 'required|string|max:255',
-            'parent_id' => 'nullable|exists:menus,id',
+        Menu::create([
+            'title' => $request->input('title'),
+            'url' => $request->input('url'),
+            'parent_id' => $request->input('parent_id'),
+
+
         ]);
 
-        Menu::create($validated);
+
         return redirect()->route('menus.index')->with('success', 'Menu created successfully!');
     }
 
@@ -68,14 +70,15 @@ class MenuController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $validated = $request->validate([
-            'title' => 'required|string|max:255',
-            'url' => 'required|string|max:255',
-            'parent_id' => 'nullable|exists:menus,id',
-        ]);
+
 
         $menu = Menu::findOrFail($id);
-        $menu->update($validated);
+        $menu->update([
+            'title' => $request->input('title'),
+            'url' => $request->input('url'),
+            'parent_id' => $request->input('parent_id'),
+
+        ]);
 
         return redirect()->route('menus.index', $menu->id)->with('success', 'Menu updated successfully!');
     }

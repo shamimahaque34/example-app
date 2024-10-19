@@ -50,6 +50,7 @@
     @include('frontend.includes.header')
     <!-- Header Area End Here -->
     @yield('body')
+    
 
 
 

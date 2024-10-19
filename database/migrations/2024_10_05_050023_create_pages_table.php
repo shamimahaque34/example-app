@@ -14,11 +14,19 @@ return new class extends Migration
         Schema::create('pages', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->text('image');
+            $table->boolean('is_remote')->nullable();
+            $table->string('posting_title')->nullable();
+            $table->string('date_opened')->nullable();
+            $table->string('job_description')->nullable();
+            $table->string('work_experience')->nullable();
+            $table->string('job_type')->nullable();
+            $table->string('apply_link')->nullable();
             $table->string('slug')->unique();
-            $table->text('content');  // Page content
+            $table->text('content')->nullable();
             $table->timestamps();
 
-            
+
 
         });
     }

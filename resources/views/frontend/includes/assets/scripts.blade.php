@@ -1,17 +1,11 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EGG313NBQV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-EGG313NBQV');
-</script>
 
 
-<script src="../cdn.pagesense.io/js/ambeinternational/67d2f802590d4904a36cccf3071fcea7.js"></script>
+
+<script src="//cdn.pagesense.io/js/ambeinternational/67d2f802590d4904a36cccf3071fcea7.js"></script>
 
 
-<script src="j{{ asset('/') }}frontend/s/vendor/modernizr-2.8.3.min.js"></script>
+<script src="{{ asset('/') }}frontend/js/vendor/modernizr-2.8.3.min.js"></script>
 
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-99670297-1"></script>
@@ -53,7 +47,7 @@
 <script src="{{ asset('/') }}frontend/js/slick.min.js"></script>
 <!--  jquery isotope -->
 <script src="{{ asset('/') }}frontend/js/isotope.pkgd.min.js" type="text/javascript"></script>
-<script src="{{ asset('/') }}frontend/js/{{ asset('/') }}frontend/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+<script src="{{ asset('/') }}frontend/js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
 <!-- jquery.counterup js -->
 <script src="{{ asset('/') }}frontend/js/jquery.counterup.min.js"></script>
 <script src="{{ asset('/') }}frontend/js/waypoints.min.js"></script>
@@ -63,7 +57,7 @@
 <!-- main js -->
 <script src="{{ asset('/') }}frontend/js/main.js"></script>
 <!-- ion icon -->
-<script src="../unpkg.com/ionicons%405.0.0/dist/ionicons.js"></script>
+<script nomodule="" src="http://unpkg.com/ionicons%405.0.0/dist/ionicons/ionicons.js"></script>
 
 <script>
     jQuery("#carousel").owlCarousel({
